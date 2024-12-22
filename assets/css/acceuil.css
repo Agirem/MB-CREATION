@@ -1100,3 +1100,67 @@ img, video {
         padding: 0 5%;
     }
 }
+.highlight {
+    color: #FFCD35;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px; /* Ajustez la position selon vos besoins */
+    right: -10px; /* Ajustez la position selon vos besoins */
+    background-color: red; /* Couleur du badge */
+    color: white; /* Couleur du texte */
+    border-radius: 50%;
+    padding: 2px 6px; /* Espacement autour du texte */
+    font-size: 12px; /* Taille de la police */
+    display: none; /* Masqué par défaut */
+}
+
+.cart-dropdown {
+    display: none; /* Masqué par défaut */
+    position: absolute;
+    top: 30px; /* Ajustez selon la hauteur de l'icône */
+    right: 0;
+    background-color: white; /* Couleur de fond */
+    border: 1px solid #ccc; /* Bordure */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+    width: 250px; /* Largeur de la liste déroulante */
+    z-index: 1000; /* Assurez-vous qu'il est au-dessus des autres éléments */
+    padding: 10px; /* Espacement interne */
+}
+
+.cart-dropdown h3 {
+    margin: 0 0 10px; /* Marge pour le titre */
+}
+
+.cart-dropdown ul {
+    list-style: none; /* Pas de puces */
+    padding: 0; /* Pas de padding */
+    margin: 0; /* Pas de marge */
+}
+
+.cart-dropdown li {
+    display: flex; /* Flex pour aligner les éléments */
+    justify-content: space-between; /* Espace entre le nom et le prix */
+    margin-bottom: 10px; /* Marge entre les articles */
+}
+
+button.go-to-cart {
+    background-color: #FFCD35; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bords arrondis */
+    padding: 10px 15px; /* Espacement interne */
+    cursor: pointer; /* Curseur en forme de main */
+    transition: background-color 0.3s ease-in-out; /* Transition pour l'effet hover */
+    margin-top: 10px;
+}
+
+button.go-to-cart:hover {
+    background-color: #c39c29; /* Couleur de fond un peu jaune foncé au survol */
+}
